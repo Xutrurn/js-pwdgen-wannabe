@@ -78,27 +78,25 @@ body {
 }
 
 .color-change-2x {
-  -webkit-animation: color-change-2x 5s linear infinite alternate both;
-  animation: color-change-2x 5s linear infinite alternate both
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #65fc46);
+  background-size: 500% 500%;
+  -webkit-animation: color-change-2x 12s linear infinite alternate both;
+  animation: color-change-2x 12s linear infinite alternate both;
 }
 
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: #d62828
-  }
 
-  100% {
-    background: #003049
-  }
-}
 
 @keyframes color-change-2x {
   0% {
-    background: #d62828
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
   }
 
   100% {
-    background: #003049
+    background-position: 0% 50%;
   }
 }
 
